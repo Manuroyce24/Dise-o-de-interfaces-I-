@@ -1,0 +1,263 @@
+body {
+  margin: 0;
+  background-image: url(./Imagenes/Static/fondazo.jpg);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: Lato, Roboto, sans-serif;
+  font-weight: 400;
+}
+
+.principal {
+  float: left;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  height: 100%;
+  background-color: rgb(9, 9, 67);
+  color: rgb(75, 247, 230);
+}
+
+header {
+  top: auto;
+  background-image: url(./Imagenes/Static/fondillo.jpg);
+  background-size: cover;
+  background-position: center center;
+  padding: 15px;
+  text-align: right;
+  color: red;
+  width: auto;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+h3 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+ul.topnav {
+  top: auto;
+  height: auto;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+}
+
+ul.topnav li {
+  float: left;
+  height: 3rem;
+}
+
+ul.topnav li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+ul.topnav li a:hover:not(.active) {
+  background-color: rgb(38, 38, 205);
+  color: yellow;
+}
+
+ul.topnav li a.active {
+  background-color: rgb(255, 0, 0);
+}
+
+ul.topnav li.right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+
+  ul.topnav li.right,
+  ul.topnav li {
+    float: none;
+  }
+}
+
+.flexPociones {
+  background-color: transparent;
+  border-radius: 25px;
+  border: solid 2px yellow;
+  padding: 10px;
+  margin: 10px;
+  border: solid 2px rgb(9, 9, 67);
+  border-radius: 25px;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+@media (max-width: 1050px) {
+  .flexPociones {
+    flex-direction: column;
+  }
+}
+
+.flexPokeball {
+  background-color: transparent;
+  border-radius: 25px;
+  border: solid 2px yellow;
+  padding: 10px;
+  margin: 10px;
+  border: solid 2px rgb(9, 9, 67);
+  border-radius: 25px;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+@media (max-width: 1050px) {
+  .flexPokeball {
+    flex-direction: column;
+  }
+}
+
+.maps {
+  margin-bottom: 2rem;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 20px;
+}
+
+input[type=text],
+select,
+textarea {
+  width: 95%;
+  color: black;
+  padding: 12px;
+  border-radius: 4px;
+  border: solid 1px black;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+input[type=number],
+select,
+textarea {
+  background-color: rgb(75, 247, 230);
+  width: 95%;
+  padding: 12px;
+  border-radius: 4px;
+  border: solid 1px black;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  color: black;
+  font-family: Lato, Roboto, sans-serif;
+}
+
+input[type=password] {
+  background-color: rgb(75, 247, 230);
+  width: 95%;
+  padding: 12px;
+  border-radius: 4px;
+  border: solid 1px black;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  color: black;
+  font-family: Lato, Roboto, sans-serif;
+}
+
+input[type=submit] {
+  background-color: rgb(75, 247, 230);
+  color: black;
+  padding: 12px 20px;
+  border: solid 1px black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: greenyellow;
+}
+
+footer {
+  color: black;
+  font-weight: 1000;
+}
+
+.dark-mode {
+  background-color: white;
+  color: black;
+}
+
+input {
+  color: #0099CC;
+  background: rgb(75, 247, 230);
+  border: 2px solid #0099CC;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+input:hover {
+  background-color: greenyellow;
+  color: white;
+}
+
+table {
+  border: solid 1px gray;
+  background-color: lightgray;
+  border-collapse: collapse;
+  margin: auto;
+  min-width: auto;
+  text-align: center;
+  height: auto;
+}
+
+table thead th {
+  background-color: rgb(75, 247, 230);
+  color: black;
+}
+
+table td,
+table th {
+  padding: 1rem 2rem;
+}
+
+table tr:hover td {
+  background-color: lightcoral;
+  color: black;
+}
+
+table tr:nth-child(2n+1) {
+  background-color: white;
+  color: black;
+}
+
+table tr form input[type=submit] {
+  display: inline-block;
+  width: 3rem;
+  font-size: 1.3rem;
+  color: black;
+}
+
+table tr {
+  text-align: center;
+  color: black;
+}
