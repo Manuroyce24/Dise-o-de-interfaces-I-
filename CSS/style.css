@@ -64,7 +64,7 @@ section {
 }
 
 .heading span {
-    color: var(--hv);
+    color: var(--pc);
     text-transform: uppercase;
 }
 
