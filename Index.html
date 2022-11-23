@@ -2,54 +2,435 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="author" content="Manu y Camilo" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio</title>
-  <link rel="stylesheet" href="CSS/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Pokemon</title>
+    <!-- Fonts  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
-  <header>
-    <h1>TIENDA POKÉMON</h1>
-  </header>
+    <!-- Header  -->
 
-  <ul class="topnav">
-    <li><a class="active" href="Index.html"><img src="./CSS/Imagenes/Static/avatar.png"> Inicio</a></li>
-    <li><a href="artículos.html"><img src="./CSS/Imagenes/Static/avatar2.png"> Artículos</a></li>
-    <li><a href="Contacto.html"><img src="./CSS/Imagenes/Static/avatar3.png"> Contacto</a></li>
-    <li class="right"><a href="Login.html">Log In <img src="./CSS/Imagenes/Static/userpkmn.png"></a></li>
-    <li class="right"><a href=""><img src="./CSS/Imagenes/Static/carrito.png"></a></li>
-    <li class="right"><a href="#theme"><button onclick="darkMode()" title="Cambiar color"><img src="" width="10"
-            height="10"></button></a></li>
-  </ul>
-  <div class="principal">
+    <header class="header">
 
-    <h2>Presentación</h2>
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="">
+        </a>
 
-    <p>Buenos dias, mañanas, tardes o noches.</p>
-    <p>Somos PokeLunathichs, un equipo especialistas en proporcionar productos para entrenadores pokemon.</p>
-    <p>Aquí podemos ver a Ash, uno de nuestros mejores clientes y representates en la región de Kanto.</p>
-    <p>Su epecialidad es la captura y entrenamiento pokemon.</p>
-    <img src="./CSS/Imagenes/Index/ash.png" width="20%" height="20%">
+        <nav class="navbar">
+            <a href="index.html#inicio">Inicio</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#offerts">Ofertas</a>
+            <a href="index.html#productos">Productos</a>
+            <a href="index.html#opiniones">Opiniones</a>
+            <a href="index.html#contact">Contacto</a>
+        </nav>
+        <!-- botones  -->
+        <div class="iconos">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fa fa-user-circle-o" style="font-size:30px" id="login-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+        <!-- Barra de busqueda  -->
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="buscar...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+        <!-- Contenido carro  -->
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/masterball.png" alt="">
+                <div class="content">
+                    <h3>Masterball</h3>
+                    <div class="price">$99.99</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/pokeballs.png" alt="">
+                <div class="content">
+                    <h3>Pack de 3 pokeballs</h3>
+                    <div class="price">$15.99</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/superpotion.png" alt="">
+                <div class="content">
+                    <h3>Superpoción</h3>
+                    <div class="price">$9.99</div>
+                </div>
+            </div>
+            <a href="#" class="btn">Pagar ahora</a>
+        </div>
+        <!-- Contenido login  -->
+        <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="Correo electrónico" class="eMail">
+            <p class="eVacio">Email Vacío</p>
+            <p class="eMal">Email Incorrecto</p>
+            <input type="password" placeholder="Contraseña" class="cLave">
+            <p class="cVacia">Contraseña Vacía</p>
+            <p class="cMal">Contraseña incorrecta</p>
+            <a class="active" href="admin.html"><input class="admin" type="button" value="LogIn"></a>
+        </form>
+
+    </header>
+
+    <!-- Header fin -->
+
+    <!-- Inicio  -->
+
+    <section class="inicio" id="inicio">
+
+        <div class="content">
+            <h3>INICIA TU AVENTURA CON NOSOTROS</h3>
+            <p>Todo lo que necesites para hacer más llevadera tu aventura, ya sean pociones o pokeballs.</p>
+            <a href="#" class="btn">Gotta Catch ’Em All!</a>
+        </div>
+
+    </section>
+
+    <!-- Fin Inicio -->
 
 
-    <p>Entre otras de nuestras especialidades destaca el cuidado de los pokemons.</p>
-    <p>De esta manera lucirán sanos y fuertes durante la aventura.</p>
-    <p>Ella es la enferemera Joe, nuestra mayor especialita en el campo de la medicina pokemon.</p>
-    <img src="./CSS/Imagenes/Index/nurse.png" width="20%" height="20%">
+    <!-- AboutUs -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>about</span> us </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/pokebArt.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <h3>¿Por qué nosotros?</h3>
+                <p>Tenemos años de experiencia como entrenadores pokemon y conocemos de manera muy cercana las
+                    necesidades que debemos cubrir con nuestros artículos.</p>
+                <p>Siempre intentaremos tener nuestras estanterías llenas listas para poder ayudaros en cualquier
+                    momento de vuestra aventura POKEMON.</p>
+                <a href="#" class="btn">Gotta Catch ’Em All!</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Fin AboutUs -->
+
+    <!-- Ofertas -->
+
+    <section class="offerts" id="offerts">
+
+        <h1 class="heading"> Ofertas <span>Flash</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="iconos">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="images/masterball.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Masterball</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$99.99 <span>$999.999</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="iconos">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="images/pokeballs.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Pack de 3 pokeballs</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="iconos">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="images/hyperpotion.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Hiperpoción</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$13.99 <span>$19.99</span></div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Fin ofertas  -->
+
+    <!-- Productos  -->
+
+    <section class="productos" id="productos">
+
+        <h1 class="heading"> Nuestros <span>productos</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/pokeball.png" alt="">
+                <h3>Pokeball</h3>
+                <div class="price">$6.99</div>
+                <a href="#" class="btn">añadir al carro</a>
+                <details class="detal">Probabilidad de captura x1</details>
+            </div>
+
+            <div class="box">
+                <img src="images/superball.png" alt="">
+                <h3>Superball</h3>
+                <div class="price">$13.99</div>
+                <a href="#" class="btn">añadir al carro</a>
+                <details class="detal">Probabilidad de captura x1.5</details>
+            </div>
+
+            <div class="box">
+                <img src="images/ultraball.png" alt="">
+                <h3>Ultraball</h3>
+                <div class="price">$24.99</div>
+                <a href="#" class="btn">añadir al carro</a>
+                <details class="detal">Probabilidad de captura x2</details>
+            </div>
+
+            <div class="box">
+                <img src="images/masterball.png" alt="">
+                <h3>Masterball</h3>
+                <div class="price">$999.999</div>
+                <a href="#" class="btn">añadir al carro</a>
+                <details class="detal">Nunca falla!!!</details>
+            </div>
+
+            <div class="box">
+                <img src="images/pokeballs.png" alt="">
+                <h3>Pack de 3 pokeballs</h3>
+                <div class="price">$20.99</div>
+                <a href="#" class="btn">añadir al carro</a>
+                <details class="detal">Pack de 3 pokeballs normales</details>
+            </div>
+
+            <div class="box">
+                <img src="images/potion.png" alt="">
+                <h3>Poción</h3>
+                <div class="price">$4.99</div>
+                <a href="#" class="btn">añadir al carro</a>
+                <details class="detal">Cura 20ps del pokemon</details>
+            </div>
+
+            <div class="box">
+                <img src="images/superpotion.png" alt="">
+                <h3>Superpoción</h3>
+                <div class="price">$9.99</div>
+                <a href="#" class="btn">añadir al carro</a>
+                <details class="detal">Cura 50ps del pokemon</details>
+            </div>
+
+            <div class="box">
+                <img src="images/hyperpotion.png" alt="">
+                <h3>Hiperpoción</h3>
+                <div class="price">$19.99</div>
+                <a href="#" class="btn">añadir al carro</a>
+                <details class="detal">Cura 200ps del pokemon</details>
+            </div>
+
+            <div class="box">
+                <img src="images/revive.png" alt="">
+                <h3>Revivir</h3>
+                <div class="price">$29.99</div>
+                <a href="#" class="btn">añadir al carro</a>
+                <details class="detal">Revive pokemons debilitados</details>
+            </div>
+
+            <div class="box">
+                <img src="images/egg-incubator.png" alt="">
+                <h3>Incubadora</h3>
+                <div class="price">$17.99</div>
+                <a href="#" class="btn">añadir al carro</a>
+                <details class="detal">Ayuda a incubar los huevos pokemon</details>
+            </div>
 
 
-    <p>Esta es nuestra tienda, en la que podemos ofrecerle una grn variedad de productos.</p>
-    <a href="artículos.html"><img src="./CSS/Imagenes/Index/shop.jpg" width="20%" height="20%"></a>
-    <p></p>
+        </div>
 
-  </div>
-  <footer><a href="Index.html">&copy;PokeLunathichs</a></footer>
+    </section>
 
-  <script src="JS/app.js"></script>
+    <!-- Fin producstos -->
+
+    <!-- Opiniones  -->
+
+    <section class="opiniones" id="opiniones">
+
+        <h1 class="heading"> Opiniones <span>De clientes</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/quote-img.png" alt="" class="quote">
+                <p>Acompañé a los jefes de la tienda durante su aventura y gracias a sus consejos y ayuda conseguí ser
+                    un gran cuidador pokemon.</p>
+                <img src="images/brock.jpg" class="user" alt="">
+                <h3>Brock</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/quote-img.png" alt="" class="quote">
+                <p>Gracias a los productos que me proporcionaron pude llegar a ser la lider del gimnario de ciudad
+                    Celeste.</p>
+                <img src="images/misty.jpg" class="user" alt="">
+                <h3>Misty</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/quote-img.png" alt="" class="quote">
+                <p>Quise acompañar a Ash y gracias a esta tienda pude acompañarle en su aventura e incluso superarle
+                    como entrenador.</p>
+                <img src="images/aura.jpg" class="user" alt="">
+                <h3>Aura</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Opiniones fin -->
+
+    <!-- Contacto  -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span>Contacta con</span> nosotros </h1>
+
+        <div class="row">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6933357556377!2d103.98577342773598!3d1.3606441587614837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da3d9e82644471%3A0xdbba59d3e53a804b!2sPok%C3%A9mon%20Center%20Singapore!5e0!3m2!1ses!2ses!4v1669106796020!5m2!1ses!2ses"
+                width="600px" height="500px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            <form action="">
+                <h3>Contactanos</h3>
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" placeholder="Nombre">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" placeholder="Correo electrónico">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-phone"></span>
+                    <input type="number" placeholder="Teléfono">
+                </div>
+                <input type="submit" value="Contacto" class="btn">
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- Contacto fin -->
+
+    <!-- Footer  -->
+
+    <section class="footer">
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+
+        <div class="enlaces">
+            <a href="#inicio">Inicio</a>
+            <a href="#about">About</a>
+            <a href="#offerts">Ofertas</a>
+            <a href="#productos">Productos</a>
+            <a href="#opiniones">Opiniones</a>
+            <a href="#contact">Contacto</a>
+        </div>
+
+        <div class="credit">&copy;Pokelunathichs</div>
+
+    </section>
+
+    <!-- Footer fin -->
+
+    <!-- JS  -->
+    <script src="js/app.js"></script>
+
 </body>
 
 </html>
