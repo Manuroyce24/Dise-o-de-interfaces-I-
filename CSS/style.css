@@ -385,7 +385,7 @@ section {
 }
 
 .productos .box-container .box .price {
-    color: var(--lc);
+    color: var(--pc);
     font-size: 2.5rem;
     padding: .5rem 0;
 }
