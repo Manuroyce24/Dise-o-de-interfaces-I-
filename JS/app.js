@@ -66,8 +66,8 @@ console.log(y1);
 var y2 = document.body.querySelector(".cMal");
 console.log(y2);
 
-x.addEventListener("focusout", eMail, true);
-y.addEventListener("focusout", eMail, true);
+x.addEventListener("input", eMail, true);
+y.addEventListener("input", eMail, true);
 
 function eMail() {
     //Correo vacio
