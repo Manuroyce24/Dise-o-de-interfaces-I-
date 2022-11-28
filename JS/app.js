@@ -86,7 +86,7 @@ function eMail() {
         x2.style.display = 'none';
         document.body.querySelector(".admin").style.display = 'none';
 
-        // Email y clave correctas alumno1    
+        // Email y clave correctas Admin    
     } else if (x.value == "francisco@admin.com" && y.value == "admin") {
         x1.style.display = 'none';
         x2.style.display = 'none';
