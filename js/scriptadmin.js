@@ -1,8 +1,3 @@
-//Volver
-document.querySelector(".back").addEventListener("click", volver);  
-function volver() {  
-  window.location.href="index.html";  
-}
 
 //Busqueda
 function filtro() {
